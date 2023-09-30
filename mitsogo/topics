@@ -104,7 +104,7 @@ a no is given you have to reduce the no to zero if no is prime reduce it by 1 or
 greedy
 printing symbols
 <!-- Find the binary value was the numbers -->
-check two strings are anagrams
+<!-- check two strings are anagrams -->
 Find the first non repeating character in Queue based approach for first non repeating character in a stream I was not clear with the problem.so I asked a lot of clarification questions regarding the problem then I told him my approcah and he was satisfied with the one then I was asked to code it which I was able to code.
 
 Find the minimum time which would take the gas to reach all the cells if the explosion happened at a point in the matric. Check if all enemies are killed with bombs placed in a matric. The problem was simpler than the given link. It was a simple Bfs problem, but is was aked why we are not able to use Bfs her then I was asked to code the problem.
