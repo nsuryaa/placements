@@ -38,7 +38,7 @@ quans:
 Averages | |
 LCM |
 Blood Relation |
-Percentages | |
+<!-- Percentages | | -->
 Geomentry | |
 
 <!-- Mixtures | | | | | -->
@@ -117,7 +117,7 @@ Display and array of the number of elements to the left of each element of an ar
 
 A cow is tied in a rectangular/square plot , the length of sie of the plot and the length of rope is given find the area where the cow can roam.
 
-Check if the input string is palindrome or not .If not then check if it can be made into palindrome or not
+<!-- Check if the input string is palindrome or not .If not then check if it can be made into palindrome or not Valid Palindrome 3 leetcode -->
 
 <!-- Spiral matrix -->
 
