@@ -1,3 +1,4 @@
+package coding.gfg;
 import java.util.*;
 
 // Java code to demonstrate star pattern

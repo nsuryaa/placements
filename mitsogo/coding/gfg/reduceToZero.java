@@ -1,4 +1,4 @@
-package coding;
+package coding.gfg;
 
 // <!-- Reduce the sum to zero
 // a no is given you have to reduce the no to zero if no is prime reduce it by 1 or reduce it by nearest prime. -->
