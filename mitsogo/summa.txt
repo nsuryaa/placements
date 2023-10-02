@@ -1,0 +1,40 @@
+
+
+
+
+int allensValue(int input1,input2[],int input3[])
+{
+  // Read only region end
+  //Write code here
+  int real_count=0;
+  while(1)
+  {
+    int count=0;
+    for(int j=0;j<input1-2;j++)
+    {
+      for(int i=0;i<input1;i++)
+      {
+        if(input2[i]==input3[j])
+        {
+          count++;
+          break;
+        }
+      }
+    }
+    if(count==input1-2)
+      break;
+
+    real_count++;
+
+    for(int i=0;i<input1;i++)
+    {
+      input3[i]=input3[i]-1;
+    }
+  }
+  //printf("%d",real_count);
+  if(input1-2==1)
+  {
+    int that=0;
+    printf("%d",that);
+  }
+}

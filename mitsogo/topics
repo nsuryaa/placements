@@ -30,30 +30,33 @@ Topics:
 Reasoning:
 Logical reasoning- roundtable position,roomates || patterns
 quans:
+
 <!-- Time,Speed and Distance | | | | height -->
 <!-- Numbers - Missing Numbers | | (number series -->
 <!-- Age || -->
 <!-- Ratios | | -->
 <!-- X Boats X | | -->
 <!-- Averages | | -->
-LCM |
+<!-- LCM | -->
 <!-- Blood Relation | -->
 <!-- Percentages | | -->
-Geomentry | |
+<!-- Geomentry | | -->
 
 <!-- Mixtures | | | | | -->
 <!-- Trains | | | | -->
 
 Pipes |
 Time and work |
-Probablility |
+
+<!-- Probablility | -->
 <!-- Prime Numbers | | | | -->
-Handshakes |
-Venn diagrams |
-Angle between minute and hour hand clock |
-chocolate distribution problem
-finding currency denomination
-coding / decoding
+<!-- Handshakes | -->
+<!-- Venn diagrams | -->
+<!-- Angle between minute and hour hand clock | -->
+<!-- chocolate distribution problem
+finding currency denomination -->
+<!-- coding / decoding -->
+
 Grammer:
 
 software 3/3 coding UI UX 2/3 coding
@@ -101,10 +104,13 @@ General competitive coding questions
 
 <!-- Reduce the sum to zero
 a no is given you have to reduce the no to zero if no is prime reduce it by 1 or reduce it by nearest prime. -->
+
 greedy
 printing symbols
+
 <!-- Find the binary value was the numbers -->
 <!-- check two strings are anagrams -->
+
 Find the first non repeating character in Queue based approach for first non repeating character in a stream I was not clear with the problem.so I asked a lot of clarification questions regarding the problem then I told him my approcah and he was satisfied with the one then I was asked to code it which I was able to code.
 
 Find the minimum time which would take the gas to reach all the cells if the explosion happened at a point in the matric. Check if all enemies are killed with bombs placed in a matric. The problem was simpler than the given link. It was a simple Bfs problem, but is was aked why we are not able to use Bfs her then I was asked to code the problem.
