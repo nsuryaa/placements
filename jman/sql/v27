@@ -1,0 +1,3 @@
+In order to prevent multiple records from being returned by the sub query,_____ must be used before the sub query.
+
+Ans: Multiple Value operators
