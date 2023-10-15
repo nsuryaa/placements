@@ -1,0 +1,13 @@
+Write a SQL query to
+Find the cities name with the condition and temperature from table 'weather' where condition=sunny or cloudy but temperature >=60.
+ChatGPT
+
+Assuming you have a table named weather with columns like city_name, condition, and temperature, you can use the following SQL query to find the cities that meet the specified conditions:
+
+sql
+
+SELECT city_name
+FROM weather
+WHERE (condition = 'sunny' OR condition = 'cloudy') AND temperature >= 60;
+
+This query selects the city_name from the weather table where the condition is either 'sunny' or 'cloudy', and the temperature is greater than or equal to 60. Adjust the column names accordingly if they differ in your actual table schema.

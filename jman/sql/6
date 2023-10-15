@@ -1,0 +1,28 @@
+User
+Write a SQL query to display:
+The details of the customer whose name starts either with letter C or P>
+Your output should contains 6 columns in the below-mentioned order
+customer_address_id   customer_id   first_name   address   phone   email
+ChatGPT
+
+Sure, you can use the SELECT statement with the WHERE clause and the LIKE operator to filter customers whose names start with either 'C' or 'P'. Here's an example SQL query:
+
+sql
+
+SELECT 
+    customer_address_id,
+    customer_id,
+    first_name,
+    address,
+    phone,
+    email
+FROM 
+    your_customer_table_name
+WHERE 
+    first_name LIKE 'C%' OR first_name LIKE 'P%';
+
+Replace your_customer_table_name with the actual name of your customer table.
+
+This query selects the specified columns from the customer table where the first_name column starts with either 'C' or 'P'. The % is a wildcard character that matches any sequence of characters.
+
+Make sure to adjust the table name according to your database schema.

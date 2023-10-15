@@ -1,0 +1,15 @@
+User
+Write SQL statement used to get all data from the student table whose name starts with p?
+ChatGPT
+
+To retrieve all data from the student table where the name starts with 'P', you can use the SELECT statement with the WHERE clause and the LIKE operator. Here's an example SQL query:
+
+sql
+
+SELECT *
+FROM student
+WHERE student_name LIKE 'P%';
+
+Replace student with the actual name of your student table, and student_name with the actual name of the column containing the student names.
+
+This query selects all columns (*) from the student table where the student_name starts with 'P'. The % is a wildcard character that matches any sequence of characters. Adjust the table and column names according to your database schema.

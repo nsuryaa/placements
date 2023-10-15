@@ -1,0 +1,18 @@
+All the details of all trains that run from or go to station that has a space in its name.
+
+Your output should have 7 columns in the below-mentioned order
+TRAIN_ID   TRAIN_NAME   TRAIN_TYPE   TRAIN_TIME   TRAIN_FROM   TRAIN_TO   TRAIN_SPEED
+Note:Do not use an alias
+ChatGPT
+
+To retrieve all the details of trains that run from or go to a station with a space in its name, you can use the following SQL query. Assuming you have a table named trains with columns such as TRAIN_ID, TRAIN_NAME, TRAIN_TYPE, TRAIN_TIME, TRAIN_FROM, TRAIN_TO, and TRAIN_SPEED, the query would look like this:
+
+sql
+
+SELECT TRAIN_ID, TRAIN_NAME, TRAIN_TYPE, TRAIN_TIME, TRAIN_FROM, TRAIN_TO, TRAIN_SPEED
+FROM trains
+WHERE TRAIN_FROM LIKE '% %' OR TRAIN_TO LIKE '% %';
+
+This query selects all columns from the trains table where the TRAIN_FROM or TRAIN_TO column contains a space. The % symbol is used as a wildcard to match any sequence of characters.
+
+Adjust the column and table names based on the actual structure of your database.

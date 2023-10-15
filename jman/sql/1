@@ -1,0 +1,15 @@
+Write a SQL query to display
+The number of women products available(use alias product_count)
+Your output should have 1 column as given below
+            product_count
+ChatGPT
+
+To write a SQL query to display the number of women products available and use the alias product_count, you would need to know the structure of your database. Assuming you have a table named products with a column gender that indicates the gender of the product, you can use a query like the following:
+
+sql
+
+SELECT COUNT(*) AS product_count
+FROM products
+WHERE gender = 'women';
+
+This query counts the number of rows in the products table where the value in the gender column is 'women'. The result is displayed with the alias product_count. Please replace 'women' with the actual value you use in your database to represent women's products.

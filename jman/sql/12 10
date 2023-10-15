@@ -1,0 +1,12 @@
+How can you change "Jman" into "Group" in the "LastName" column in the Users table?
+ChatGPT
+
+To change "Jman" into "Group" in the "LastName" column of the "Users" table, you can use the SQL UPDATE statement. Assuming you have a table named "Users" and you want to update the "LastName" column, the query would look like this:
+
+sql
+
+UPDATE Users
+SET LastName = 'Group'
+WHERE LastName = 'Jman';
+
+This query updates the "LastName" column in the "Users" table, setting it to 'Group' where the current value is 'Jman'. Make sure to adjust the table and column names based on your actual database schema. Additionally, always be cautious when running UPDATE statements to avoid unintended data modifications.
