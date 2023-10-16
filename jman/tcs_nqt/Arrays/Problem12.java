@@ -1,3 +1,4 @@
+package tcs_nqt.Arrays;
 import java.util.*;
 public class Problem12
 {

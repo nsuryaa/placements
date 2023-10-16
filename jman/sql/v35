@@ -1,0 +1,72 @@
+Counting Votes:
+Given a database of a votes won by different candidates in  an election,find the number of votes won by female candidates whose age is less than 50.
+Schema:
+There are 2 tables:Candidates and Results
+Candidates
+Name          Type          Description
+id               INTEGER     It is a primary key
+gender    STRING       The gender of the candidate
+age          INTEGER      Age of the candidate
+party       STRING         The party to which the candidate belong
+
+Results
+
+Name                                Type          Description
+constituency_id     INTEGER        It is the constituency to which the candidate is contesting from
+candidate_id           INTEGER        It is the primary key
+votes                           INTEGER       The number of votes won by the candidate.
+
+Candidates
+id     gender     age     party
+1           M             55       Democratic
+2         M              51        Democratic
+3          F                49     Democratic
+4         M               60      Republic
+5         F                 61       Republic
+6         F                 48      Republic
+
+Results
+constituency_id      candidate_id     votes
+1                                             1                       847529
+1                                            4                       283409
+2                                           2                        293841
+2                                          5                         394385
+3                                           3                         429084
+3                                          6                           303890
+
+Output:
+732974
+Explanation:
+There are three female candidates   contesting the election.Two of them less than 50 years old.The sym of their votes is 429084+303890 = 732974
+ChatGPT
+2 / 2
+
+To find the number of votes won by female candidates whose age is less than 50, you can use the following SQL query:
+
+sql
+
+SELECT SUM(R.votes) AS total_votes
+FROM Candidates C
+JOIN Results R ON C.id = R.candidate_id
+WHERE C.gender = 'F' AND C.age < 50;
+
+This query performs an inner join between the Candidates and Results tables using the candidate ID. It selects the sum of votes (SUM(R.votes)) for female candidates (C.gender = 'F') whose age is less than 50 (C.age < 50).
+
+Applying this query to your example:
+
+sql
+
+SELECT SUM(R.votes) AS total_votes
+FROM Candidates C
+JOIN Results R ON C.id = R.candidate_id
+WHERE C.gender = 'F' AND C.age < 50;
+
+This should return the result:
+
+diff
+
+total_votes
+-----------
+732974
+
+This output represents the sum of votes won by female candidates whose age is less than 50.
