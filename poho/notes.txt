@@ -1,0 +1,41 @@
+optmize code
+dsa
+dbms
+os
+networks
+five programming:
+pattern printing !
+arrays !
+sorting !
+recursions
+C programming
+10 apti 10 coding
+DSA
+paper and pattern
+round 2 7 programming
+OOPS
+mcq output based pseudo code flowchart
+2hrs
+no options
+apti
+time and work
+age
+percentages
+trains
+
+adv
+Whatsapp
+cab booking app with set of functions
+
+Tech
+dbms java
+
+coding
+1.to find occurence of a letter in given string
+2.Move zeroes to end in-place without using 2 for 
+Group anagrams together
+input : occurrence output : o1c3r2e2n1
+
+optimal solution
+no maps
+no nested for
