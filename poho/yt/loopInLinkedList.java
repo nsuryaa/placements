@@ -23,6 +23,10 @@ class Solution {
         }
         return false;
     }
+
+    public String longestMountain(int[] arr1) {
+        return null;
+    }
 }
 
 public class loopInLinkedList {
