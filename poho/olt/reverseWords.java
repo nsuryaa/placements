@@ -1,5 +1,5 @@
 class reverseWords {
-    public String reverseWords(String s) {
+    public static String reverseWords(String s) {
         // Trim the input string to remove leading and trailing spaces
         String[] str = s.trim().split("\\s+");
 
@@ -20,7 +20,7 @@ class reverseWords {
         // Example usage
         reverseWords reverseWords = new reverseWords();
         String input = "   Hello   World  ";
-        String reversed = reverseWords.reverseWords(input);
+        String reversed = reverseWords(input);
 
         System.out.println("Input: " + input);
         System.out.println("Reversed: " + reversed);
