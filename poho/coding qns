@@ -1,19 +1,27 @@
-There were two strings given and you have to modify the second string according
- to some rules in comparison to the first string.
+Given an array nums containing n distinct numbers in the range [0, n],
+ return the only number in the range that is missing from the array.
+Given a string column title that represents the column title as appears 
+in an Excel sheet, return its corresponding column number.
+There were two strings given and you have to modify the second string 
+according to some rules in comparison to the first string.
+The next three questions were from easy to medium. They were:
+Check whether a string is a subsequence of another or not.
+Letter combination of a phone number. Given a string containing
+ digits 0-9, return all possible letter combinations. Letter combination of a phone number.
+It was a stack question. It was similar to Decode a string
+ recursively encoded as count followed by substring.
 
- Remove unbalanced parentheses in a given expression.
- Eg.) Input : ((abc)((de))
- Output : ((abc)(de))
- Input : (((ab)
- Output : (ab)
 
- void main()
- {
-    int c[]={11,12,13,14,15};
-    int j,*q=c;
-    for(j=0;j<5;j++)
-    {
-        ++q;
-    }
-    printf("%d ","c);
- }
+
+
+1. Find the column number for the given Excel column.
+
+2. Shift the zeros to end. I gave an approach and was asked to optimize without using an extra array, and after some thinking, I solved it.
+
+3. To find the palindrome substring within the given substring I gave one approach, and they were satisfied.
+
+4. A matrix of N*N will be given; we have to find the possible counts of routes if we can move right and down in the matrix towards the end. This was a bit tricky, and I gave some mathematical solutions, but I couldn’t solve it completely, so it was considered an approach.
+
+5. Buy and sell stock to get maximum profit. Straight after reading this question, I knew I wouldn’t be able to solve it with an optimal solution, so I went for the brute force approach and was able to get the output given for the question. I was then asked to optimize, and I tried hard till the time ran out and I couldn’t give them an optimized solution.
+
+There were a total of 6 questions, and I completely answered 4 either with or without an optimal solution, 1 partially, and 1 was unsolved.
