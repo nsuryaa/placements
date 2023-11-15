@@ -1,7 +1,7 @@
 
 import java.io.*;
 
-class hourGlass {
+class Pattern2 {
     // Function definition
     static void pattern(int rows_no) {
         int i, j, k;

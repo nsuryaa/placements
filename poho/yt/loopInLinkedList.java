@@ -27,6 +27,10 @@ class Solution {
     public String longestMountain(int[] arr1) {
         return null;
     }
+
+    public int[] twoSumTwo(int[] numbers, int target) {
+        return null;
+    }
 }
 
 public class loopInLinkedList {
