@@ -18,7 +18,7 @@ class Pattern2 {
             // printing i to rows value
             // at the end of each row
             for (j = i; j <= rows_no; j++)
-                System.out.print(j + " ");
+                System.out.print("*" + " ");
 
             System.out.println();
         }
@@ -33,7 +33,7 @@ class Pattern2 {
             // printing i to rows value
             // at the end of each row
             for (j = i; j <= rows_no; j++)
-                System.out.print(j + " ");
+                System.out.print("*" + " ");
 
             System.out.println();
         }

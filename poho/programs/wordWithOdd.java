@@ -13,7 +13,7 @@ public class wordWithOdd {
                 } else if (j == wordLength - i - 1) {
                     System.out.print(word.charAt(j));
                 } else {
-                    System.out.print(" ");
+                    System.out.print(" ");>
                 }
             }
             System.out.println();

@@ -13,7 +13,7 @@ public class Bss {
     public static void main(String[] args) {
         // Example usage of the maxProfit method
         Bss solution = new Bss();
-        int[] examplePrices = {7, 1, 5, 3, 6, 4};
+        int[] examplePrices = { 7, 1, 5, 3, 6, 4 };
         int result = solution.maxProfit(examplePrices);
         System.out.println("Maximum profit: " + result);
     }
