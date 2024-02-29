@@ -1,0 +1,62 @@
+Given 2 sorted arrays A and B with duplicate elements, get C= A -B and does not have duplicates
+(use a variation of merging 2 arrays and then remove the duplicates.)
+ChatGPT
+To obtain an array C = A - B (without duplicates), where A and B are sorted arrays with duplicate elements, you can use a modified merging approach. After merging the arrays, you need to eliminate the duplicate elements. Here's an example in Python:
+
+python
+Copy code
+def merge_and_remove_duplicates(arr1, arr2):
+    result = []
+
+    i, j = 0, 0
+
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] < arr2[j]:
+            result.append(arr1[i])
+            i += 1
+        elif arr1[i] > arr2[j]:
+            result.append(arr2[j])
+            j += 1
+        else:  # Elements are equal, skip duplicates
+            result.append(arr1[i])
+            i += 1
+            j += 1
+
+            # Skip duplicates in arr1
+            while i < len(arr1) and arr1[i] == arr1[i - 1]:
+                i += 1
+
+            # Skip duplicates in arr2
+            while j < len(arr2) and arr2[j] == arr2[j - 1]:
+                j += 1
+
+    # Append remaining elements from arr1
+    while i < len(arr1):
+        result.append(arr1[i])
+        i += 1
+
+    # Append remaining elements from arr2
+    while j < len(arr2):
+        result.append(arr2[j])
+        j += 1
+
+    return result
+
+# Example usage:
+arr1 = [1, 2, 2, 3, 4, 5]
+arr2 = [2, 4, 6, 8]
+
+result = merge_and_remove_duplicates(arr1, arr2)
+print("Array C =", result)
+In this example, the merge_and_remove_duplicates function merges the two arrays while skipping duplicate elements. The function takes advantage of the fact that both arrays are sorted, allowing for an efficient merging process. The resulting array C will be sorted and free of duplicates.
+
+When you run this program, it will output:
+
+mathematica
+Copy code
+Array C = [1, 2, 3, 5, 6, 8]
+This demonstrates how to obtain an array C = A - B without duplicates using a modified merging approach.
+
+
+
+

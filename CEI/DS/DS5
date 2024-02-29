@@ -1,0 +1,44 @@
+Algorithm to prove that given binary tree are same
+ChatGPT
+To determine whether two binary trees are identical (have the same structure and values in each corresponding node), you can use a recursive algorithm to traverse the trees and compare their nodes. Below is a simple algorithm in pseudocode:
+
+plaintext
+Copy code
+function areTreesIdentical(tree1, tree2):
+    // Base case: If both trees are empty, they are identical
+    if tree1 is null and tree2 is null:
+        return true
+
+    // If one tree is empty and the other is not, they are not identical
+    if tree1 is null or tree2 is null:
+        return false
+
+    // Check if the values of the current nodes are the same
+    if tree1.value is not equal to tree2.value:
+        return false
+
+    // Recursively check the left and right subtrees
+    leftSubtreeIdentical = areTreesIdentical(tree1.left, tree2.left)
+    rightSubtreeIdentical = areTreesIdentical(tree1.right, tree2.right)
+
+    // Return true only if both left and right subtrees are identical
+    return leftSubtreeIdentical and rightSubtreeIdentical
+This algorithm checks the following conditions:
+
+If both trees are empty, they are identical.
+If one tree is empty and the other is not, they are not identical.
+If the values of the current nodes are not equal, the trees are not identical.
+Recursively check whether the left and right subtrees are identical.
+You can use this algorithm by passing the roots of the two binary trees as arguments:
+
+plaintext
+Copy code
+if areTreesIdentical(treeRoot1, treeRoot2):
+    print("The trees are identical.")
+else:
+    print("The trees are not identical.")
+This algorithm has a time complexity of O(n), where n is the total number of nodes in the smaller of the two trees. The recursive nature of the algorithm makes it straightforward to understand and implement.
+
+
+
+

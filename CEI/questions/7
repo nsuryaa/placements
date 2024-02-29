@@ -1,0 +1,46 @@
+To print 2's compliment of binary no. given in string. output should also be in string only.
+ChatGPT
+To calculate the 2's complement of a binary number given as a string, you need to follow these steps:
+
+Invert all the bits (change 0s to 1s and vice versa).
+Add 1 to the result obtained from step 1.
+Here's a JavaScript function that performs this operation:
+
+javascript
+Copy code
+function twosComplement(binaryString) {
+  // Step 1: Invert all the bits
+  let invertedString = '';
+  for (let i = 0; i < binaryString.length; i++) {
+    invertedString += binaryString[i] === '0' ? '1' : '0';
+  }
+
+  // Step 2: Add 1 to the inverted result
+  let carry = 1;
+  let result = '';
+  for (let i = invertedString.length - 1; i >= 0; i--) {
+    const sum = parseInt(invertedString[i]) + carry;
+    result = (sum % 2) + result;
+    carry = Math.floor(sum / 2);
+  }
+
+  // If there is a carry after the addition, append it to the result
+  if (carry > 0) {
+    result = '1' + result;
+  }
+
+  return result;
+}
+
+// Example usage:
+const binaryNumber = '1101';
+const twosComplementResult = twosComplement(binaryNumber);
+console.log("2's complement:", twosComplementResult);
+In this example, the twosComplement function takes a binary number as a string, inverts its bits, adds 1 to the inverted result, and returns the 2's complement as a string.
+
+Make sure to adapt this code to your specific use case if needed.
+
+
+
+
+

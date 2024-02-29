@@ -1,0 +1,38 @@
+Hash key function was given and some numbers. Have to find numbers which are mapped to same hash
+key.
+ChatGPT
+To find numbers that are mapped to the same hash key using a given hash function, you need to apply the hash function to each number and identify cases where multiple numbers result in the same hash value. Without knowing the specific hash function, I'll provide a generic example and pseudocode to illustrate the process.
+
+Assuming you have a hash function hashFunction(num) that returns the hash key for a given number num, you can follow these steps:
+
+plaintext
+Copy code
+// Example hash function (you need to replace this with the actual hash function)
+function hashFunction(num):
+    return num % 5  // Example hash function, replace with your actual function
+
+// Given numbers
+numbers = [10, 15, 22, 27, 32, 35, 40, 45]
+
+// Create a dictionary to store numbers mapped to the same hash key
+hashMap = {}
+
+// Iterate through each number and find the hash key
+for num in numbers:
+    hashKey = hashFunction(num)
+
+    // Check if the hash key already exists in the dictionary
+    if hashKey in hashMap:
+        // If the hash key exists, append the current number to the list
+        hashMap[hashKey].append(num)
+    else:
+        // If the hash key doesn't exist, create a new list with the current number
+        hashMap[hashKey] = [num]
+
+// Identify numbers mapped to the same hash key
+for hashKey, mappedNumbers in hashMap.items():
+    if len(mappedNumbers) > 1:
+        print(f"Numbers {mappedNumbers} are mapped to the same hash key {hashKey}")
+Replace hashFunction(num) with your actual hash function. The code creates a dictionary (hashMap) where the keys are hash values and the values are lists of numbers that map to the same hash key. Finally, it prints out the numbers that are mapped to the same hash key.
+
+Note: The actual implementation may vary based on the specifics of your hash function and the programming language you are using. If you provide more details about the hash function and the numbers you have, I can offer a more specific example.

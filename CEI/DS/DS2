@@ -1,0 +1,38 @@
+An inorder of binary tree was given and we are asked to draw tree as well as state its postorder
+ChatGPT
+To reconstruct a binary tree from its inorder traversal and then find its postorder traversal, you can use a recursive approach. The inorder traversal of a binary tree is of the form Left, Root, Right. If you are given the inorder traversal, you can follow these steps:
+
+The last element in the inorder traversal will always be the root.
+Divide the remaining elements into two parts - elements to the left of the root represent the left subtree, and elements to the right represent the right subtree.
+Recursively repeat steps 1 and 2 for the left and right subtrees.
+Let's take an example. Suppose the inorder traversal is [4, 2, 5, 1, 3, 6].
+
+The last element 6 is the root.
+Elements to the left [4, 2, 5, 1, 3] represent the left subtree.
+Elements to the right are empty because there are no elements to the right of 6.
+Now, we repeat the process for the left subtree [4, 2, 5, 1, 3]:
+
+The last element 3 is the root of the left subtree.
+Elements to the left [4, 2, 5, 1] represent the left subtree.
+Elements to the right are empty because there are no elements to the right of 3.
+Continue this process until you have reconstructed the entire tree.
+
+Here is the reconstructed tree for the given inorder traversal [4, 2, 5, 1, 3, 6]:
+
+markdown
+Copy code
+        6
+       /
+      3
+     /
+    1
+   / \
+  2   5
+ /
+4
+Now, to find the postorder traversal, you can follow a similar recursive approach:
+
+Recursively find the postorder traversal of the left subtree.
+Recursively find the postorder traversal of the right subtree.
+Append the root to the result.
+For the given example, the postorder traversal would be [4, 2, 5, 1, 3, 6]

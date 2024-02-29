@@ -1,0 +1,58 @@
+o make a BST from given values.
+
+ChatGPT
+To create a Binary Search Tree (BST) from a given set of values, you can insert each value into the tree one by one. Here is a simple implementation in Java:
+
+java
+Copy code
+class TreeNode {
+    int val;
+    TreeNode left, right;
+
+    public TreeNode(int val) {
+        this.val = val;
+        this.left = this.right = null;
+    }
+}
+
+public class BST {
+
+    public TreeNode insert(TreeNode root, int val) {
+        if (root == null) {
+            // If the tree is empty, create a new node
+            return new TreeNode(val);
+        }
+
+        // If the value is less than the current node, insert into the left subtree
+        if (val < root.val) {
+            root.left = insert(root.left, val);
+        }
+        // If the value is greater than or equal to the current node, insert into the right subtree
+        else {
+            root.right = insert(root.right, val);
+        }
+
+        return root;
+    }
+
+    public void inorderTraversal(TreeNode root) {
+        if (root != null) {
+            inorderTraversal(root.left);
+            System.out.print(root.val + " ");
+            inorderTraversal(root.right);
+        }
+    }
+
+    public static void main(String[] args) {
+        BST bst = new BST();
+        int[] values = {5, 3, 7, 1, 4, 6, 8};
+
+        TreeNode root = null;
+        for (int value : values) {
+            root = bst.insert(root, value);
+        }
+
+        System.out.println("Inorder Traversal of BST:");
+        bst.inorderTraversal(root);
+    }
+}

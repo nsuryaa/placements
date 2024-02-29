@@ -1,0 +1,58 @@
+To find smallest common Ancestor of two given nodes of BST. ??
+ChatGPT
+To find the smallest common ancestor (also known as Lowest Common Ancestor or LCA) of two given nodes in a Binary Search Tree (BST), you can follow these steps:
+
+Start from the root of the BST.
+Traverse the tree from the root.
+At each node, compare the values of the current node with the values of the two given nodes.
+If both nodes have values greater than the current node, it means the common ancestor must be in the right subtree.
+If both nodes have values less than the current node, it means the common ancestor must be in the left subtree.
+If one value is less and the other is greater, it means the current node is the common ancestor.
+Here is a sample implementation in JavaScript:
+
+javascript
+Copy code
+class TreeNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+function findLowestCommonAncestor(root, p, q) {
+  if (!root) {
+    return null; // Tree is empty
+  }
+
+  // If both nodes are smaller than the root, LCA must be in the left subtree
+  if (p.value < root.value && q.value < root.value) {
+    return findLowestCommonAncestor(root.left, p, q);
+  }
+
+  // If both nodes are greater than the root, LCA must be in the right subtree
+  if (p.value > root.value && q.value > root.value) {
+    return findLowestCommonAncestor(root.right, p, q);
+  }
+
+  // If one node is smaller and the other is greater, or one of them is equal to the root, then the current node is the LCA
+  return root;
+}
+
+// Example usage:
+// Construct a sample BST
+const root = new TreeNode(20);
+root.left = new TreeNode(10);
+root.right = new TreeNode(30);
+root.left.left = new TreeNode(5);
+root.left.right = new TreeNode(15);
+root.right.left = new TreeNode(25);
+root.right.right = new TreeNode(35);
+
+const node1 = root.left.left;  // Node with value 5
+const node2 = root.left.right; // Node with value 15
+
+const lca = findLowestCommonAncestor(root, node1, node2);
+
+console.log("Lowest Common Ancestor:", lca.value); // Output should be 10
+In this example, the findLowestCommonAncestor function takes the root of the BST, and two nodes (p and q) as parameters and returns the lowest common ancestor of those two nodes in the BST.

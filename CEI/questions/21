@@ -1,0 +1,49 @@
+Code to see if a binary tree is a BST or not. 
+ChatGPT
+To check if a binary tree is a Binary Search Tree (BST), you need to verify whether the values of nodes follow the BST property. In a BST, for any given node:
+
+All nodes in its left subtree have values less than the node's value.
+All nodes in its right subtree have values greater than the node's value.
+Here is an example implementation in Python:
+
+python
+Copy code
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+def isBST(node, min_value=float('-inf'), max_value=float('inf')):
+    if node is None:
+        return True
+
+    # Check the current node's value against the range defined by its ancestors
+    if not (min_value <= node.value <= max_value):
+        return False
+
+    # Recursively check the left and right subtrees
+    return (isBST(node.left, min_value, node.value - 1) and
+            isBST(node.right, node.value + 1, max_value))
+
+# Example usage:
+# Construct a BST
+root = TreeNode(10)
+root.left = TreeNode(5)
+root.right = TreeNode(15)
+root.left.left = TreeNode(2)
+root.left.right = TreeNode(7)
+root.right.right = TreeNode(20)
+
+# Check if it's a BST
+if isBST(root):
+    print("The tree is a BST.")
+else:
+    print("The tree is not a BST.")
+This implementation uses a recursive function isBST that takes a binary tree node and checks whether the subtree rooted at that node follows the BST property. The min_value and max_value parameters are used to define the valid range for the current node's value.
+
+When you run this program with the provided example, it will print "The tree is a BST."
+
+
+
+

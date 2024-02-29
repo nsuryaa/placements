@@ -1,0 +1,62 @@
+Give the binary equivalance of -5
+To represent negative numbers in binary using two's complement notation, you follow these steps:
+
+Write the binary representation of the positive equivalent of the number.
+Invert all the bits (change 0s to 1s and 1s to 0s).
+Add 1 to the inverted binary number.
+For example, let's find the binary equivalent of -5:
+
+Positive equivalent of 5 in binary: 
+5
+10
+=
+10
+1
+2
+5 
+10
+​
+ =101 
+2
+​
+ .
+Invert all bits: 
+01
+0
+2
+010 
+2
+​
+ .
+Add 1 to the inverted binary number: 
+01
+0
+2
++
+1
+=
+01
+1
+2
+010 
+2
+​
+ +1=011 
+2
+​
+ .
+So, the binary equivalent of -5 in two's complement notation is 
+−
+5
+10
+=
+1111111111111111111111111111101
+1
+2
+−5 
+10
+​
+ =11111111111111111111111111111011 
+2
+​
+ . The leading "1" indicates the negative sign.

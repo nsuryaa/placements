@@ -1,0 +1,44 @@
+Write a program to swap two integer pointers.
+ChatGPT
+Here's a simple C program that demonstrates how to swap two integer pointers:
+
+c
+Copy code
+#include <stdio.h>
+
+void swapPointers(int** ptr1, int** ptr2) {
+    int* temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+
+int main() {
+    int num1 = 5;
+    int num2 = 10;
+
+    int* ptr1 = &num1;
+    int* ptr2 = &num2;
+
+    printf("Before swapping:\n");
+    printf("num1 = %d, num2 = %d\n", *ptr1, *ptr2);
+
+    swapPointers(&ptr1, &ptr2);
+
+    printf("After swapping:\n");
+    printf("num1 = %d, num2 = %d\n", *ptr1, *ptr2);
+
+    return 0;
+}
+In this program:
+
+swapPointers is a function that takes two integer pointers (int**) as arguments and swaps the values they point to.
+
+The main function declares two integers (num1 and num2) and two integer pointers (ptr1 and ptr2) pointing to these integers.
+
+Before swapping, it prints the values of num1 and num2.
+
+It then calls the swapPointers function, passing the addresses of ptr1 and ptr2 to swap their values.
+
+After swapping, it prints the values of num1 and num2 again.
+
+This program demonstrates how to swap two integer pointers, which effectively swaps the integers they point to.

@@ -1,0 +1,39 @@
+Given two integers A & B. Determine how many bits required to convert A to B. Write a function
+int BitSwapReqd(int A, int B);
+ChatGPT
+You can determine the number of bits required to convert integer A to integer B by performing the XOR operation on A and B and then counting the number of set bits (bits with value 1) in the result. The count of set bits represents the number of positions where A and B differ. Here's the implementation in C:
+
+c
+Copy code
+#include <stdio.h>
+
+int countSetBits(int n) {
+    int count = 0;
+    while (n) {
+        count += n & 1;
+        n >>= 1;
+    }
+    return count;
+}
+
+int BitSwapReqd(int A, int B) {
+    int xorResult = A ^ B;
+    return countSetBits(xorResult);
+}
+
+int main() {
+    int A = 14; // Example value for A
+    int B = 31; // Example value for B
+
+    int result = BitSwapReqd(A, B);
+    printf("Number of bits required to convert A to B: %d\n", result);
+
+    return 0;
+}
+In this program, the countSetBits function counts the number of set bits in an integer using a simple loop. The BitSwapReqd function calculates the XOR of A and B and then calls countSetBits to determine the number of bits that are different.
+
+Note: This implementation assumes that the input integers A and B are 32-bit integers. If you are working with a different bit size, you may need to adjust the implementation accordingly.
+
+
+
+

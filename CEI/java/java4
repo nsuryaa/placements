@@ -1,0 +1,43 @@
+J2ee componenets
+ChatGPT
+Java 2 Platform, Enterprise Edition (J2EE) has evolved into the Java EE (Enterprise Edition) platform. Java EE provides a set of specifications and APIs for building enterprise-level, distributed, and scalable Java applications. The components in Java EE are designed to simplify the development of large-scale, mission-critical applications. Here are some key components of Java EE:
+
+Servlets:
+
+Servlets are Java classes that handle HTTP requests and responses. They are the building blocks for web applications and are executed on the server.
+JavaServer Pages (JSP):
+
+JSP allows embedding Java code in HTML pages. It simplifies the creation of dynamic web content by providing a convenient way to mix static content with dynamic Java code.
+Enterprise JavaBeans (EJB):
+
+EJB is a server-side component architecture for building distributed, transactional, and scalable enterprise applications. There are three types of EJBs:
+Session Beans: Manage business logic and are used for tasks such as calculations and decision-making.
+Entity Beans: Represent persistent data and are used for database operations.
+Message-Driven Beans (MDB): Handle asynchronous processing of messages.
+Java Message Service (JMS):
+
+JMS provides a framework for sending and receiving messages between distributed systems. It is particularly useful for building scalable and loosely-coupled enterprise applications.
+Java Transaction API (JTA):
+
+JTA is a specification that defines a standard interface between the transaction manager and the parties involved in a distributed transaction system.
+Java Naming and Directory Interface (JNDI):
+
+JNDI provides a standard interface for accessing naming and directory services. It is used for looking up resources and components in a distributed environment.
+Java Database Connectivity (JDBC):
+
+JDBC is a Java-based API that allows Java applications to interact with relational databases. It provides a standard method for accessing and manipulating databases.
+JavaMail API:
+
+JavaMail provides a set of APIs for sending and receiving email messages. It is used for building email-related functionality in Java applications.
+Web Services (JAX-RS, JAX-WS):
+
+Java EE supports the development of web services using the Java API for XML Web Services (JAX-WS) and Java API for RESTful Web Services (JAX-RS).
+JavaServer Faces (JSF):
+
+JSF is a Java web application framework that simplifies the development integration of web-based user interfaces.
+These components work together to provide a comprehensive platform for building and deploying enterprise-level applications. Java EE applications are typically deployed on Java EE-compatible application servers, such as Apache Tomcat, WildFly, or IBM WebSphere.
+
+
+
+
+

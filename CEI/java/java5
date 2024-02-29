@@ -1,0 +1,29 @@
+Diffenece between entity bean and session bean
+ChatGPT
+In Java EE (now Jakarta EE), both Entity Beans and Session Beans are types of Enterprise JavaBeans (EJBs), which are components designed to simplify the development of large-scale, distributed enterprise applications. Here are the key differences between Entity Beans and Session Beans:
+
+Purpose:
+
+Entity Bean: Represents persistent data in a database. It is used to model the business entities in an application, such as customers, orders, etc.
+Session Bean: Manages the business logic and often represents a transient conversation with a client. Session beans are used for tasks such as calculations, decision-making, and coordinating interactions between other beans.
+Data Storage:
+
+Entity Bean: Represents data stored in a database. It is associated with a table in the database and corresponds to a row in that table.
+Session Bean: Does not represent persistent data. It is used for managing the flow and business logic of the application but does not have a direct connection to a database.
+Lifecycle:
+
+Entity Bean: The lifecycle of an entity bean is typically long-lived, corresponding to the lifespan of the data it represents in the database.
+Session Bean: The lifecycle of a session bean is typically short-lived. There are stateful and stateless session beans with different lifecycles.
+State:
+
+Entity Bean: Can be either persistent (stateful) or transient (stateless). Persistent entity beans retain their state between method invocations.
+Session Bean: Can be stateful or stateless. Stateless session beans do not maintain conversational state between method invocations, while stateful session beans do.
+Usage:
+
+Entity Bean: Used when the application needs to interact with and manipulate persistent data stored in a database. Entity beans often map directly to database tables.
+Session Bean: Used to encapsulate business logic and perform tasks on behalf of a client. They are often used to coordinate the workflow of an application.
+Concurrency:
+
+Entity Bean: Entity beans may have to deal with issues related to concurrent access and locking in a multi-user environment due to their long-lived nature.
+Session Bean: Concurrency is generally less of a concern for stateless session beans since they are short-lived and are not shared between clients.
+In summary, Entity Beans are primarily used to model and interact with persistent data in a database, while Session Beans are used to manage business logic, workflow, and transient interactions with clients. The choice between the two depends on the specific requirements and architecture of the application. In modern Java EE (or Jakarta EE) development, the use of JPA (Java Persistence API) for persistent data and Session Beans for business logic is more common than using traditional Entity Beans.

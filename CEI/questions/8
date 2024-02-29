@@ -1,0 +1,47 @@
+
+To find middle of linked list.
+ChatGPT
+To find the middle of a linked list, you can use the "two-pointer" approach. This involves having two pointers traverse the list at different speeds. Here is a simple algorithm to find the middle of a linked list:
+
+javascript
+Copy code
+class ListNode {
+  constructor(val) {
+    this.val = val;
+    this.next = null;
+  }
+}
+
+function findMiddle(head) {
+  if (!head) {
+    return null; // Empty list
+  }
+
+  let slow = head;
+  let fast = head;
+
+  while (fast !== null && fast.next !== null) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return slow;
+}
+
+// Example usage:
+// Construct a sample linked list
+const head = new ListNode(1);
+head.next = new ListNode(2);
+head.next.next = new ListNode(3);
+head.next.next.next = new ListNode(4);
+head.next.next.next.next = new ListNode(5);
+
+const middleNode = findMiddle(head);
+console.log("Middle Node:", middleNode.val); // Output should be 3
+In this example, the findMiddle function takes the head of the linked list as a parameter and uses two pointers (slow and fast). The slow pointer moves one step at a time, while the fast pointer moves two steps at a time. When the fast pointer reaches the end of the list, the slow pointer will be at the middle of the list.
+
+Note that if the length of the linked list is even, this approach will return the second middle node. If you want to return the first middle node for an even-length list, you can modify the while loop condition to while (fast !== null && fast.next.next !== null).
+
+
+
+

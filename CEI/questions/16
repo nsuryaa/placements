@@ -1,0 +1,30 @@
+Write a function int round (float x) to round off a floating point num to int.
+ChatGPT
+Here is a simple implementation of the round function in C that rounds a floating-point number to the nearest integer:
+
+c
+Copy code
+#include <stdio.h>
+
+int roundFloatToInt(float x) {
+    if (x >= 0) {
+        return (int)(x + 0.5);
+    } else {
+        return (int)(x - 0.5);
+    }
+}
+
+int main() {
+    float num = 3.14;
+    int rounded = roundFloatToInt(num);
+
+    printf("Original float: %f\n", num);
+    printf("Rounded int: %d\n", rounded);
+
+    return 0;
+}
+In this implementation:
+
+The roundFloatToInt function takes a float argument and returns an int.
+It adds or subtracts 0.5 based on the sign of the floating-point number and then casts the result to an integer.
+Note that this is a simple rounding function and might not handle all edge cases perfectly due to floating-point precision issues. If you need more robust handling of rounding, you may want to consider using library functions like round from the <math.h> library in C.

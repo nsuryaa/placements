@@ -1,0 +1,72 @@
+Write an algorithm to insert a node into sorted linked list. After inserting, the list must be sorted.
+ChatGPT
+To insert a node into a sorted linked list while maintaining the sorted order, you need to traverse the list to find the correct position for the new node. Here's a simple algorithm in Java:
+
+java
+Copy code
+class ListNode {
+    int val;
+    ListNode next;
+
+    public ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+}
+
+public class SortedLinkedListInsertion {
+
+    public static ListNode insertIntoSortedLinkedList(ListNode head, int value) {
+        ListNode newNode = new ListNode(value);
+
+        if (head == null || value < head.val) {
+            // If the list is empty or the new node should be inserted at the beginning
+            newNode.next = head;
+            return newNode;
+        }
+
+        ListNode current = head;
+
+        while (current.next != null && current.next.val < value) {
+            current = current.next;
+        }
+
+        // Insert the new node after the current node
+        newNode.next = current.next;
+        current.next = newNode;
+
+        return head;
+    }
+
+    // Function to print the elements of a linked list
+    public static void printList(ListNode head) {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // Creating a sorted linked list
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(3);
+        head.next.next = new ListNode(5);
+
+        // Inserting a new node (e.g., 4) into the sorted linked list
+        int valueToInsert = 4;
+        head = insertIntoSortedLinkedList(head, valueToInsert);
+
+        // Printing the sorted linked list after insertion
+        System.out.println("Sorted Linked List after Insertion:");
+        printList(head);
+    }
+}
+In this program, the insertIntoSortedLinkedList function inserts a new node with the given value into the sorted linked list while maintaining the sorted order. The printList function is a utility function to print the elements of the linked list.
+
+The algorithm checks if the list is empty or if the new node should be inserted at the beginning. If not, it traverses the list to find the correct position to insert the new node and adjusts the pointers accordingly.
+
+
+
+

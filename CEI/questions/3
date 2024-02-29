@@ -1,0 +1,33 @@
+To Reverse doubly link list
+ChatGPT
+To reverse a doubly linked list, you need to swap the next and previous pointers for each node in the list. Here is a simple algorithm to reverse a doubly linked list:
+
+plaintext
+Copy code
+Algorithm to Reverse Doubly Linked List:
+1. Initialize three pointers: current, next, and prev.
+2. Start from the head of the linked list (the first node).
+3. For each node:
+   a. Save the next node.
+   b. Update the next pointer of the current node to point to the previous node.
+   c. Update the previous pointer of the current node to point to the next node.
+   d. Move to the next node in the original order.
+4. Update the head pointer to the last node (which is the original tail after reversal).
+5. The list is now reversed.
+
+Pseudocode:
+function reverseDoublyLinkedList(head):
+    current = head
+    prev = null
+
+    while current is not null:
+        next = current.next
+        current.next = prev
+        current.prev = next
+        prev = current
+        current = next
+
+    // Update the head to the last node
+    head = prev
+
+    return head

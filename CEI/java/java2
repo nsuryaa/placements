@@ -1,0 +1,38 @@
+Difference between wait() notify() and notifyall()
+ChatGPT
+In Java, wait(), notify(), and notifyAll() are methods that are used in conjunction with the synchronized keyword to manage the synchronization and communication between threads.
+
+wait():
+
+Usage: wait() is called on an object within a synchronized context (inside a synchronized block or method).
+Functionality: It causes the current thread to release the lock on the object and enter a waiting state. The thread remains in the waiting state until another thread calls notify() or notifyAll() on the same object, allowing the waiting thread to proceed.
+notify():
+
+Usage: notify() is also called on an object within a synchronized context.
+Functionality: It wakes up one of the threads that are currently in a waiting state on the object. The choice of which thread to wake up is not specified and depends on the implementation.
+notifyAll():
+
+Usage: Like notify(), notifyAll() is called within a synchronized context.
+Functionality: It wakes up all threads that are currently in a waiting state on the object. This is often preferred over notify() because it ensures that all waiting threads have a chance to proceed, and it helps avoid potential issues like missed signals.
+Here's a simple example to illustrate the usage of wait(), notify(), and notifyAll():
+
+java
+Copy code
+class SharedResource {
+    private boolean condition = false;
+
+    synchronized void waitForCondition() throws InterruptedException {
+        while (!condition) {
+            wait();  // Releases the lock and waits for notify/notifyAll
+        }
+        // Continue processing after the condition is true
+    }
+
+    synchronized void setConditionTrue() {
+        condition = true;
+        notifyAll();  // Notifies all waiting threads
+    }
+}
+In this example, threads can call waitForCondition() to wait for the condition to become true. The setConditionTrue() method sets the condition to true and notifies all waiting threads using notifyAll().
+
+Remember that the use of wait(), notify(), and notifyAll() should be done with care to avoid potential issues like deadlock or missed signals. It's often recommended to use higher-level constructs provided by the java.util.concurrent package, such as CountDownLatch, CyclicBarrier, or Semaphore, for more robust synchronization and coordination between threads.

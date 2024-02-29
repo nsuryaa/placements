@@ -1,0 +1,42 @@
+question on macro
+#define SUM(A,B) (A * B)
+#define MUL(A,B) (A) + (B)
+a=2;b=3;
+value = SUM( SUM(a-b , b) + MUL (a,b) ) - SUM( MUL (b,a) + SUM(a, b-a) )
+ChatGPT
+Let's break down the expression and substitute the values of a and b into the macros:
+
+c
+Copy code
+a = 2;
+b = 3;
+value = SUM(SUM(a - b, b) + MUL(a, b)) - SUM(MUL(b, a) + SUM(a, b - a))
+Now, substitute the macros:
+
+c
+Copy code
+value = SUM(SUM(2 - 3, 3) + MUL(2, 3)) - SUM(MUL(3, 2) + SUM(2, 3 - 2))
+Expand the macros further:
+
+c
+Copy code
+value = (2 - 3 * 3) + (2 * 3) - ((3 * 2) + (2 * (3 - 2)))
+Perform the arithmetic operations:
+
+c
+Copy code
+value = 2 - 9 + 6 - (6 + 2)
+Combine like terms:
+
+c
+Copy code
+value = -1
+So, the value of the expression when a = 2 and b = 3 is -1.
+
+
+
+
+Is this conversation helpful so far?
+
+
+

@@ -1,0 +1,33 @@
+To find o/p of crazy function.
+crazy(int n, int a, int b)
+{
+if(n==0) return;
+crazy(n-1,b+n,a);
+printf("%d%d%d",n,a,b);
+crazy(n-1,b,a+n);
+}
+find crazy(3,4,5);
+
+The `crazy` function you've provided is a recursive function that takes three integer parameters: `n`, `a`, and `b`. It appears to be performing some form of recursion with a pattern that involves swapping the values of `a` and `b` while decrementing `n` until `n` reaches 0. After each recursion, it prints the values of `n`, `a`, and `b` together.
+
+Let's analyze the `crazy` function step by step for the call `crazy(3, 4, 5)`:
+
+1. `n=3, a=4, b=5`
+
+   - The first recursive call: `crazy(2, 5, 4)`. Note the swapping of `a` and `b` values.
+   - `printf("%d%d%d", 3, 4, 5)` prints "345".
+
+2. `n=2, a=5, b=4`
+
+   - The first recursive call: `crazy(1, 4, 9)`.
+   - `printf("%d%d%d", 2, 5, 4)` prints "254".
+
+3. `n=1, a=4, b=9`
+
+   - The first recursive call: `crazy(0, 9, 4)`.
+   - `printf("%d%d%d", 1, 4, 9)` prints "149".
+
+4. `n=0, a=9, b=4`
+   - The base case is reached, so no further recursive calls are made.
+
+So, when you call `crazy(3, 4, 5)`, it will print "345254149" as a result of the recursive calls and `printf` statements.
