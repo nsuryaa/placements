@@ -1,0 +1,303 @@
+Certainly! Here are 100 coding problems covering arrays, strings, and linked lists that you can use to practice for your coding interview:
+
+### Arrays:
+
+[√] 1. Find the maximum and minimum element in an array.
+[√] 2. Find the "Kth" max and min element of an array.
+[√] 3. Find the common elements in three sorted arrays.
+[√] 4. Count frequencies of all elements in an array.
+[!] 5. Rotate an array by "K" elements.
+[√] 6. Find the number of pairs with a given sum in an array.
+[√] 7. Find the equilibrium index of an array.
+[√] 8. Rearrange positive and negative numbers in an array.
+[√] 9. Find the majority element in an array.
+[√] 10. Merge two sorted arrays into one.
+
+### Strings:
+
+[√] 11. Reverse a string.
+[√] 12. Check if a string is palindrome.
+[√] 13. Check if two strings are anagrams of each other.
+14. Find the longest substring without repeating characters.
+15. Convert a string to an integer.
+16. Check if a string is a rotation of another string.
+17. Implement strstr (substring search).
+18. Check if a string is a valid parentheses sequence.
+19. Remove duplicates from a string.
+20. Count and Say sequence.
+
+### Linked Lists:
+
+21. Reverse a linked list.
+22. Detect a cycle in a linked list.
+23. Find the middle of a linked list.
+24. Merge two sorted linked lists.
+25. Check if a linked list is a palindrome.
+26. Remove Nth node from the end of a linked list.
+27. Intersection point of two linked lists.
+28. Remove duplicates from a sorted linked list.
+29. Implement a stack using a linked list.
+30. Implement a queue using a linked list.
+
+### Mixed Problems (Arrays, Strings, Linked Lists):
+
+31. Longest common prefix in an array of strings.
+32. Group anagrams together.
+33. Implement a priority queue.
+34. Implement a hash map.
+35. Implement a trie (prefix tree).
+36. First non-repeating character in a string.
+37. Add two numbers represented by linked lists.
+38. Find the next greater element in an array.
+39. Find the first missing positive integer in an array.
+40. Implement a circular queue.
+
+### Advanced Problems:
+
+41. Find all duplicates in an array.
+42. Product of array except self.
+43. Maximum subarray sum.
+44. Trapping rainwater problem.
+45. Merge K sorted arrays.
+46. Reverse nodes in k-group.
+47. Longest substring with at most K distinct characters.
+48. Serialize and deserialize a binary tree.
+49. Implement LRU cache.
+50. Design a snake game.
+
+### More Problems:
+
+51. Implement a basic calculator.
+52. Count number of subarrays with given sum.
+53. Convert sorted array to binary search tree.
+54. Find the celebrity problem.
+55. Sort colors (0s, 1s, and 2s).
+56. Implement wildcard pattern matching.
+57. Longest palindromic substring.
+58. Sort a linked list using merge sort.
+59. Flatten a multilevel linked list.
+60. Implement a basic regular expression matcher.
+
+### Additional Problems:
+
+61. Find peak element in an array.
+62. Implement strStr() function (substring search).
+63. Minimum window substring.
+64. Implement stack using queues.
+65. Find longest increasing subsequence.
+66. Implement pow(x, n).
+67. Implement wildcard matching.
+68. Word break problem.
+69. Maximum product subarray.
+70. Remove K digits to form smallest number.
+
+### More Advanced Problems:
+
+71. Design a data structure that supports the following operations: insert, delete, getRandom, all in O(1) time.
+72. Implement a trie (prefix tree) with insert, search, and startsWith methods.
+73. Implement an algorithm to determine if a string has all unique characters.
+74. Design and implement a least recently used (LRU) cache.
+75. Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+### More Linked List Problems:
+
+76. Sort a linked list using insertion sort.
+77. Reverse linked list in pairs.
+78. Find the intersection point of two linked lists.
+79. Clone a linked list with next and random pointer.
+80. Add two numbers represented by linked lists.
+
+### Miscellaneous Problems:
+
+81. Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
+82. Find all possible subsets of a given set of distinct integers.
+83. Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+84. Given a collection of intervals, merge all overlapping intervals.
+85. Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+### String Manipulation Problems:
+
+86. Given two strings s and t, determine if they are isomorphic.
+87. Given a string s and a string t, write a function to determine if t is an anagram of s.
+88. Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+89. Implement a function to check if a string is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+### Advanced Linked List Problems:
+
+90. Given a linked list, swap every two adjacent nodes and return its head.
+91. Reverse a linked list from position m to n. Do it in one-pass.
+92. Given a linked list, remove the n-th node from the end of list and return its head.
+93. Merge k sorted linked lists and return it as one sorted list.
+94. Reverse a linked list from position m to n. Do it in one-pass.
+
+### More Advanced Array Problems:
+
+95. Given an array nums of n integers, find all unique triplets in the array which gives the sum of zero.
+96. Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target.
+97. Given an array of integers, find two numbers such that they add up to a specific target number.
+98. Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
+99. Given an array nums of n integers and an integer target, find all unique quadruplets in the array which gives the sum of target.
+
+### More String Manipulation Problems:
+
+100. Given a string s, find the length of the longest substring without repeating characters.
+
+These problems should cover a wide range of concepts and difficulty levels in arrays, strings, and linked lists. Use online platforms like LeetCode, HackerRank, or GeeksforGeeks to practice solving them. Good luck with your interview preparation!
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Practice Problems for Coding Interview: Arrays, Strings, Linked Lists
+
+Here are 100 practice problems categorized under Arrays, Strings, and Linked Lists to help you prepare for your coding interview:
+
+**Arrays (33):**
+
+1. Find the sum of all elements in an array.
+2. Find the maximum and minimum elements in an array.
+3. Search for a specific element in an array.
+4. Reverse an array.
+5. Rotate an array by k elements.
+6. Find the missing number in an array.
+7. Find the equilibrium point in an array (where left and right sums are equal).
+8. Find the duplicate elements in an array.
+9. Find the largest sum contiguous subarray.
+10. Find the longest subarray with a given sum.
+11. Move all zeros to the end of the array.
+12. Segregate positive and negative numbers in an array.
+13. Find the frequency of each element in an array.
+14. Find the leaders in an array (elements greater than all elements on its right).
+15. Implement a two-pointer approach for array problems (e.g., finding pairs, sorting arrays).
+16. Implement merge sort and quick sort algorithms for sorting arrays.
+17. Find the kth smallest element in an array.
+18. Find the intersection and union of two sorted arrays.
+19. Find the product of all elements except the current element.
+20. Implement a function to check if an array is sorted.
+21. Find the maximum sum path in a triangular array.
+22. Find the longest common subsequence (LCS) of two strings.
+23. Implement a stack and queue using an array.
+24. Find the maximum sum subarray with given constraints (e.g., non-adjacent elements).
+25. Find the minimum number of jumps to reach the end of an array (Jump Game problem).
+26. Find the maximum product subarray.
+27. Find the maximum length of a subarray with at most K distinct integers.
+28. Find the trapping rain water problem in an array representing heights.
+29. Find triplets in an array that sum to a given value.
+30. Implement a sparse matrix representation using arrays.
+31. Find the maximum area of a rectangle in a binary matrix.
+32. Implement a 2D array for matrix operations.
+33. Solve the stock buy and sell problem to find the maximum profit.
+
+**Strings (33):**
+
+1. Find the length of a string.
+2. Reverse a string.
+3. Check if a string is a palindrome.
+4. Find the first and last occurrence of a character in a string.
+5. Count the number of vowels and consonants in a string.
+6. Remove all duplicate characters from a string.
+7. Check if a string is a substring of another string.
+8. Find the longest common prefix and suffix of a string.
+9. Implement string comparison functions.
+10. Perform string manipulation (e.g., uppercase/lowercase conversion, substring extraction).
+11. Implement string searching algorithms like Knuth-Morris-Pratt (KMP).
+12. Find the number of words in a string.
+13. Check if a string is an anagram of another string.
+14. Implement string hashing algorithms like Rabin-Karp.
+15. Find the longest palindromic substring in a string.
+16. Validate an email address format.
+17. Reverse words in a string.
+18. Find the most frequent word in a string.
+19. Encode and decode strings using Caesar Cipher or other encryption techniques.
+20. Implement regular expressions for pattern matching.
+21. Find all permutations of a string.
+22. Check if a string is a valid parenthesis expression.
+23. Find the longest substring without repeating characters.
+24. Find the minimum number of characters to remove to make a string a palindrome.
+25. Implement string tokenization to split a string based on delimiters.
+26. Find the longest repeating substring in a string.
+27. Check if a string is a valid Roman numeral.
+28. Convert a string to an integer and vice versa.
+29. Find the kth most frequent character in a string.
+30. Implement string compression techniques (e.g., removing consecutive duplicates).
+31. Validate an IP address format.
+32. Find the first non-repeating character in a string.
+33. Solve string problems involving string rotations or comparisons.
+
+**Linked Lists (34):**
+
+1. Create a linked list node.
+2. Insert a node at the beginning of a linked
+-----------------------------------------------------------------------------------
+Certainly! Here are some additional coding problems related to arrays, strings, and linked lists that you can practice for your coding interview:
+
+### Arrays:
+1. Find the largest subarray with 0 sum.
+2. Rotate an array to the right by k steps.
+3. Implement a stack using an array.
+4. Implement a queue using an array.
+5. Find the majority element (appears more than n/2 times) in an array.
+6. Find the smallest missing positive integer in an unsorted array.
+7. Merge two sorted arrays into a single sorted array.
+8. Implement a circular queue using an array.
+9. Find the maximum product subarray.
+10. Find the longest increasing subsequence in an array.
+11. Implement a dynamic array (similar to ArrayList in Java).
+12. Find the intersection of two arrays.
+13. Implement a min heap using an array.
+14. Implement a max heap using an array.
+15. Find the kth largest element in an array.
+16. Implement a priority queue using an array.
+17. Find the maximum sum subarray with non-adjacent elements.
+18. Implement a sparse matrix using an array.
+19. Find the peak element in an array (an element which is not smaller than its neighbors).
+20. Implement a circular buffer using an array.
+
+### Strings:
+1. Reverse words in a given string.
+2. Longest common prefix among an array of strings.
+3. Convert a Roman numeral to an integer.
+4. Convert an integer to a Roman numeral.
+5. Check if two strings are anagrams.
+6. Find the longest palindromic substring.
+7. Implement strstr (substring search) function.
+8. Implement atoi (string to integer) function.
+9. Implement itoa (integer to string) function.
+10. Implement regular expression matching.
+11. Implement a trie (prefix tree) for efficient string search.
+12. Implement a suffix array for efficient substring search.
+13. Implement a suffix tree for efficient substring search.
+14. Implement a trie-based autocomplete system.
+15. Find the longest common subsequence between two strings.
+16. Implement a string compression algorithm (e.g., Run-Length Encoding).
+17. Implement a string matching algorithm (e.g., KMP or Rabin-Karp).
+18. Implement a string reversal algorithm.
+19. Implement a string rotation algorithm.
+20. Implement a string permutation generator.
+
+### Linked Lists:
+1. Reverse a linked list.
+2. Detect if a linked list has a cycle (Floyd's Tortoise and Hare algorithm).
+3. Find the middle element of a linked list.
+4. Merge two sorted linked lists.
+5. Remove duplicates from a sorted linked list.
+6. Swap nodes in pairs in a linked list.
+7. Add two numbers represented by linked lists.
+8. Detect and remove a loop in a linked list.
+9. Find the intersection point of two linked lists.
+10. Rotate a linked list by k places.
+
+Feel free to choose the ones that interest you the most and practice solving them! Good luck with your interview preparation! 😊
+
+Source: Conversation with Bing, 29/02/2024
+(1) Top 50 Array Coding Problems for Interviews - GeeksforGeeks. https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/.
+(2) 40+ linked list questions and solutions (easy, medium, hard). https://igotanoffer.com/blogs/tech/linked-list-interview-questions.
+(3) Top 50 String Coding Problems for Interviews - GeeksforGeeks. https://www.geeksforgeeks.org/top-50-string-coding-problems-for-interviews/.
+(4) Top 50 Problems on Linked List Data Structure asked in SDE Interviews .... https://www.geeksforgeeks.org/top-20-linked-list-interview-question/.
+(5) 50 String Coding Questions Using Python | by Natasha | Medium. https://medium.com/@natashanewbold/50-string-coding-questions-using-python-3177ab65adf8.
+(6) Top 20 String Coding Problems from Programming Job Interviews. https://dev.to/javinpaul/top-20-string-coding-problems-from-programming-job-interviews-493m.
+(7) 51 string interview questions (coding problems with solutions). https://igotanoffer.com/blogs/tech/string-interview-questions.
+(8) 20+ Linked List Interview Questions for Java, C++, and Python .... https://dev.to/javinpaul/review-these-linked-list-interview-questions-before-your-java-python-or-c-programming-interviews-35o4.
+(9) Top 20 Linked List Coding Problems from Technical Interviews. https://medium.com/javarevisited/top-20-linked-list-coding-problems-from-technical-interviews-90b64d2df093.
+(10) 20+ Linked List Interview Questions for Java Programmers. https://dzone.com/articles/20-linked-list-interview-questions-for-java-progra.
+(11) 20+ Array Coding Problems and Questions from Programming ... - Medium. https://medium.com/javarevisited/20-array-coding-problems-and-questions-from-programming-interviews-869b475b9121.
+(12) Top array interview questions and answers - Educative. https://www.educative.io/blog/array-interview-questions.
+(13) 50+ array questions with solutions (easy, medium, hard). https://igotanoffer.com/blogs/tech/array-interview-questions.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
